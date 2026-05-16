@@ -234,3 +234,48 @@ p {
     grid-template-columns: 1fr;
   }
 }
+.post h1 {
+  color: var(--fg);
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.post-content {
+  margin-top: 32px;
+}
+
+.post-content p {
+  margin-bottom: 18px;
+}
+
+.post-meta {
+  color: var(--red);
+  font-size: 13px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.post-preview {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  background: rgba(31, 41, 55, 0.35);
+}
+
+.post-preview h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.post-preview h2 a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+  color: var(--red);
+}

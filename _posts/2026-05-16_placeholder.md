@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "Place Holder Post"
 date: 2026-05-16
-categories: Conferences
+categories: conferences
 ---
 
 Don't look at me I'm just a place holder.

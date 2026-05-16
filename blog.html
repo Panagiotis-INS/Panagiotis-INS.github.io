@@ -1,0 +1,52 @@
+---
+layout: null
+title: Blog
+permalink: /blog/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a href="{{ '/' | relative_url }}">Panagiotis Fiskilis - Neuro</a>
+    </div>
+
+    <nav class="nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="section-title">
+      <span>/blog</span>
+    </div>
+
+    <section class="post-list">
+      {% for post in site.posts %}
+        <article class="post-preview">
+          <h2>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+
+          <p class="post-meta">
+            {{ post.date | date: "%Y-%m-%d" }} — {{ post.categories | join: ", " }}
+          </p>
+
+          <p>
+            {{ post.excerpt | strip_html | truncate: 180 }}
+          </p>
+        </article>
+      {% endfor %}
+    </section>
+  </main>
+</body>
+</html>
