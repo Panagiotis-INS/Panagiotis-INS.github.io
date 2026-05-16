@@ -1,0 +1,63 @@
+---
+layout: null
+title: Conferences
+permalink: /conferences/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conferences | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a href="{{ '/' | relative_url }}">Panagiotis Fiskilis - Neuro</a>
+    </div>
+
+    <nav class="nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/red-team-operations/' | relative_url }}">Red Team Operations</a>
+      <a href="{{ '/active-directory/' | relative_url }}">Active Directory</a>
+      <a href="{{ '/c2-and-implants/' | relative_url }}">C2 and Implants</a>
+      <a href="{{ '/BOFs/' | relative_url }}">BOFs</a>
+      <a href="{{ '/homelab/' | relative_url }}">Home Lab Projects and Vulnerable Labs Setup</a>
+      <a href="{{ '/conferences/' | relative_url }}">Conferences - No Spoilers ;)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="section-title">
+      <span>/conferences</span>
+    </div>
+
+    <section class="post-list">
+      {% assign conference_posts = site.categories.conferences %}
+
+      {% if conference_posts.size > 0 %}
+        {% for post in conference_posts %}
+          <article class="post-preview">
+            <h2>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+
+            <p class="post-meta">
+              {{ post.date | date: "%Y-%m-%d" }} — {{ post.categories | join: ", " }}
+            </p>
+
+            <p>
+              {{ post.excerpt | strip_html | truncate: 180 }}
+            </p>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p>No conference posts yet.</p>
+      {% endif %}
+    </section>
+  </main>
+</body>
+</html>
