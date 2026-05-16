@@ -1,0 +1,82 @@
+---
+layout: null
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a href="{{ '/' | relative_url }}">Panagiotis Fiskilis - Neuro</a>
+    </div>
+
+    <nav class="nav">
+      <a href="{{ '/red-team-operations/' | relative_url }}">Red Team Operations</a>
+      <a href="{{ '/active-directory/' | relative_url }}">Active Directory</a>
+      <a href="{{ '/c2-and-implants/' | relative_url }}">C2 and Implants</a>
+      <a href="{{ '/BOFs/' | relative_url }}">BOFs</a>
+      <a href="{{ '/homelab/' | relative_url }}">Home Lab Projects and Vulnerable Labs Setup</a>
+      <a href="{{ '/conferences/' | relative_url }}">Conferences - No Spoilers ;)</a>
+      <a
+        href="https://www.linkedin.com/in/panagiotis-fiskilis-9740701b7/"
+        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn profile"
+    >
+    <svg
+        class="linkedin-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+    >
+    <path
+      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.941v5.665H9.351V9h3.414v1.561h.046c.476-.9 1.637-1.852 3.369-1.852 3.602 0 4.267 2.371 4.267 5.455v6.288zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+    />
+    </svg>
+    LinkedIn
+    </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p>
+        Panagiotis is a Senior Red Team Operator and a Wanna be Manager.
+        He has multiple years of experience in penetration testing, Red Team and now Management.
+        He has performed multiple assessments including Web Application Penetration Testing, Mobile Application Penetration Testing, API Hacking Assessments, Active Directory Review, Non-opsec Red Team, Internal and External Infrastructure.
+        Currently he is mostly working on Red Team Projects and does Sales, Customer Management and Resource Management.
+      </p>
+
+    </section>
+
+    <div class="section-title">
+      <span>/blog</span>
+    </div>
+
+    
+    <section class="certifications">
+      <h2>Certifications</h2>
+
+      <div class="cert-grid">
+        <a href="#" class="cert">OSCP</a>
+        <a href="#" class="cert">OSWA</a>
+        <a href="#" class="cert">OSWE</a>
+        <a href="#" class="cert">CRTO</a>
+        <a href="#" class="cert">eWPT</a>
+        <a href="#" class="cert">RTOS - Dark Vortex</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
