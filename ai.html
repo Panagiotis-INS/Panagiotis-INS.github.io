@@ -1,7 +1,7 @@
 ---
 layout: null
-title: C2 and Implants
-permalink: /c2-and-implants/
+title: AI
+permalink: /ai/
 ---
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ permalink: /c2-and-implants/
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C2 and Implants | {{ site.title }}</title>
+  <title>AI | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
@@ -33,11 +33,11 @@ permalink: /c2-and-implants/
 
   <main class="container">
     <div class="section-title">
-      <span>/c2-and-implants</span>
+      <span>/ai</span>
     </div>
 
     <section class="post-list">
-      {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'C2 and Implants'" %}
+      {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'AI'" %}
 
       {% if category_posts.size > 0 %}
         {% for post in category_posts %}
