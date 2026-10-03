@@ -1,0 +1,27 @@
+[
+
+  {
+    "title": "AI 101",
+    "url": "/blog/ai-101/",
+    "date": "2026-09-30",
+    "categories": ["AI"],
+    "excerpt": "Motivation:\n"
+  },
+
+  {
+    "title": "Windows Malware Development - Part 1 - Introduction to C",
+    "url": "/blog/windows-malware-development-part-1-introduction-to-c/",
+    "date": "2026-08-15",
+    "categories": ["C2 and Implants"],
+    "excerpt": "Motivation:\n"
+  },
+
+  {
+    "title": "Place Holder Post",
+    "url": "/blog/placeholder/",
+    "date": "2026-05-16",
+    "categories": ["conferences"],
+    "excerpt": "Don’t look at me I’m just a place holder.\n"
+  }
+
+]
